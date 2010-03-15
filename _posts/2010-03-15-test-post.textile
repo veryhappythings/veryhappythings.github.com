@@ -1,0 +1,8 @@
+---
+layout: post
+title: This is a test post
+---
+
+h1. {{ page.title }}
+
+Just testing out Jekyll and pages. Woop woop!
