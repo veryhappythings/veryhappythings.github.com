@@ -1,9 +1,24 @@
 @import url("reset.css");
 
 body {
-    font-family: 'Trebuchet MS', Verdana, Arial
+    font-family: 'Trebuchet MS', Verdana, Arial;
+
+    margin: 10px;
 }
 
 h1 {
+    font-size: 30px;
+    font-style: bold;
+
+    margin-bottom: 10px;
+}
+
+h2 {
     font-size: 20px;
+
+    margin-bottom: 10px;
+}
+
+ul {
+    margin-left: 10px;
 }
