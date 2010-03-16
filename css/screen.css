@@ -1,0 +1,9 @@
+@import url("reset.css");
+
+body {
+    font-family: 'Trebuchet MS', Verdana, Arial
+}
+
+h1 {
+    font-size: 20px;
+}

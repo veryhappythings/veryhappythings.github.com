@@ -3,11 +3,20 @@ layout: default
 title: Very Happy Blog
 ---
 
-<div id="home">
-  <h1>Blog Posts</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
-</div>
+<h2>About</h2>
+<p>My name is Mac Chapman. I write code. At the moment I work on
+<a href='http://www.billmonitor.com'>BillMonitor</a>. I write python and ruby,
+but I'll use whatever works. My favourite text editor is Vim.
+</p>
+
+<ul class='links'>
+    <li><a href='http://www.github.com/veryhappythings'>Github</a></li>
+    <li><a href='http://uk.linkedin.com/in/macchapman'>LinkedIn</a></li>
+</ul>
+
+<h2>Blog Posts</h2>
+<ul class="posts">
+  {% for post in site.posts %}
+    <li><span>{{ post.date | date_to_string }}</span> - <a href="{{ post.url }}">{{ post.title }}</a></li>
+  {% endfor %}
+</ul>
