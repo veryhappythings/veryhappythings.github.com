@@ -38,10 +38,21 @@ ul {
     margin-left: 10px;
 }
 
-#post_nav {
-    font-size: 8px;
+#post_body {
+    margin-top: 10px;
 }
+
+#post_nav {
+    font-size: 10px;
+}
+
+.date {
+    font-size: 10px;
+}
+
 
 .links {
     margin-bottom: 30px;
 }
+
+
