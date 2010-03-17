@@ -4,6 +4,4 @@ title: This is a test post
 category: test
 ---
 
-h1. {{ page.title }}
-
 Just testing out Jekyll and pages. Woop woop!
