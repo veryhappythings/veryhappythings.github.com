@@ -18,6 +18,10 @@ h1 {
     margin-bottom: 30px;
 }
 
+h1 a {
+    color: #000;
+}
+
 h2 {
     font-size: 20px;
 
