@@ -6,6 +6,7 @@ a {
 
 body {
     font-family: 'Trebuchet MS', Verdana, Arial;
+    text-align: justify;
 
     margin: 10px;
     width: 600px;
@@ -39,11 +40,11 @@ ul {
 }
 
 #post_body {
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 #post_body p {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     font-family: helvetica;
 }
 .date {
