@@ -1,7 +1,0 @@
----
-layout: post
-title: This is a test post
-category: test
----
-
-Just testing out Jekyll and pages. Woop woop!
