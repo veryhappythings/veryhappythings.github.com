@@ -1,4 +1,4 @@
---- 
+---
 wordpress_id: 11
 title: Rails 2.1.0 scaffolding
 wordpress_url: http://blog.veryhappythings.co.uk/?p=11
@@ -11,7 +11,9 @@ Most Ruby on Rails tutorials are, for a start, incorrect, because they're old (T
 If you do not define any fields when you execute the "generate scaffold" command, you will not see any columns in your scaffold pages.
 
 Most tutorials imply that the scaffold will grab your columns from the database.  It won't.  It makes no effort to by default.  To check out how to define columns, try typing
+
 <code>script/generate scaffold</code>
+
 That should help you out a bit.
 
 I'm a rails novice so I won't put any more information in this post, but hopefully it'll save someone from being as confused as I was when my code didn't do what the tutorials said it would.
