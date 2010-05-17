@@ -20,8 +20,8 @@ Towards the end of the festival I wanted to immortalise the links to the playlis
 All told, for a tiny week-long project that I thought up on a Friday, it was a huge success.  Thank you so much to everyone who contributed and listened - you made everyone involved very happy.  Thanks to Spotify, the playlists live on, and they're all still available on the Spotstock website.
 
 Here are some stats:
-* 24 playlists
-* over 20 hours of music
-* 10 people
-* 188 unique visits
-* 505 hits
+ * 24 playlists
+ * over 20 hours of music
+ * 10 people
+ * 188 unique visits
+ * 505 hits
