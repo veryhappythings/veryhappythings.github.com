@@ -26,3 +26,5 @@ Here are some stats:
  * 10 people
  * 188 unique visits
  * 505 hits
+
+If you like, you can see the minimal amount of [code](http://github.com/veryhappythings/spotstock.heroku.com) involved.
