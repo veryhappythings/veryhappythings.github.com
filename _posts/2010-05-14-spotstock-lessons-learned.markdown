@@ -3,7 +3,7 @@ title: Spotstock - lessons learned
 layout: post
 ---
 
-At the end of the week before last I decided that Spotify's new social features were a good excuse to host a little festival using Spotify as a platform. I announced it on Twitter and facebook, and then tried to decide how best to run it.
+At the end of the week before last I decided that [Spotify](http://www.spotify.com)'s new social features were a good excuse to host a little festival using Spotify as a platform. I announced it on Twitter and facebook, and then tried to decide how best to run it.
 
 I figured I'd try my best to just get the site done so people could see it and start thinking about their playlists, so I made it entirely static.  I put it on a rails stack so I could add to it later, which gave me an opportunity to use the awesome Heroku service for deployment.  In under an hour, the site was up.  This turned out to be really sensible, because I have a bad habit of starting projects and not finishing them.  Here I was finished before I'd even really started thinking about what I'd do.
 
@@ -17,7 +17,7 @@ While I'm thinking about it, bit.ly's API is perfect.  It couldn't be simpler.  
 
 Towards the end of the festival I wanted to immortalise the links to the playlists so that they could be found later.  Twitter's API isn't so great for finding historical data so I moved my search code into rails and stored my search findings into a database.  The festival was still going, but Heroku does not provide hourly cron jobs for free, so I made an admin page that would run the search and dump it to a database whenever I hit it.  I made the job stateless so I could mash refresh on it as often or as little as I liked.  Heroku and rails are my saviours here: it was so easy to do all this, I feel like I cheated.
 
-All told, for a tiny week-long project that I thought up on a Friday, it was a huge success.  Thank you so much to everyone who contributed and listened - you made everyone involved very happy.  Thanks to Spotify, the playlists live on, and they're all still available on the Spotstock website.
+All told, for a tiny week-long project that I thought up on a Friday, it was a huge success.  Thank you so much to everyone who contributed and listened - you made everyone involved very happy.  Thanks to Spotify, the playlists live on, and they're all still available on the [Spotstock](http://spotstock.heroku.com) website.
 
 Here are some stats:
 
