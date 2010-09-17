@@ -8,9 +8,9 @@ Thanks to the people on <a href="http://www.nabble.com/Easy_install-on-jython-2.
 
 On newer versions of Jython, you can use easy_install to grab python packages easily.
 
-<code>
+<pre><code>
 wget http://peak.telecommunity.com/dist/ez_setup.py
 jython ez_setup.py
-</code>
+</code></pre>
 
 Your shiny jython-based easy_install will be available at $JYTHON_HOME/bin/easy_install. Brilliant.
