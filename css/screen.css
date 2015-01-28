@@ -32,6 +32,10 @@ ul {
     margin: 10px;
 }
 
+pre {
+    padding-bottom: 20px;
+}
+
 #about {
     color: #555;
 
