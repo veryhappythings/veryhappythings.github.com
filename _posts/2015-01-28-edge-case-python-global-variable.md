@@ -28,6 +28,7 @@ def test_function():
 test_function()
 ```
 
+
 Here's the output that you get:
 
 ```
@@ -41,6 +42,7 @@ Traceback (most recent call last):
     print TEST_VARIABLE
 UnboundLocalError: local variable 'TEST_VARIABLE' referenced before assignment
 ```
+
 
 So, line 10 causes an error in line 6. Pretty confusing if you don't know what
 you're looking for! The simple solution is, never assign to a global variable
