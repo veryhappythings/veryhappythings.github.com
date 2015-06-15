@@ -60,4 +60,4 @@ After much prodding, I got to the bottom of it. I used the python [M2Crypto](htt
         public_key = bytes[24:]
 ```
 
-If you can tell me what those 24 bytes do, I'd love to know, and I'd love to know why they don't appear on the other side. They must be part of the PEM formatting. I feel like it must be possible to avoid PEM entirely here, as it seems like a bit of a long way around, but I haven't come across one.
+If you can tell me what those 24 bytes do, I'd love to know, and I'd love to know why they don't appear on the other side. They must be part of the PEM formatting. I feel like it must be possible to avoid PEM entirely here, as it seems like a bit of a long way around, but I haven't come across one. If you can help tie up some of these loose ends, please drop me a [github pull request or issue](https://github.com/veryhappythings/veryhappythings.github.com/blob/master/_posts/2015-06-15-ssl-certificate-transfer.md). Thanks!
