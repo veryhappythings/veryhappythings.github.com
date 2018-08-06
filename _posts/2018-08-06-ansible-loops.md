@@ -24,6 +24,7 @@ So, obviously, this task would fail - `exists_in_task_scope` hasn't been
 defined.
 
 ```
+{% raw %}
 # example.yml
 ---
 - hosts: all
@@ -58,12 +59,14 @@ ok: [default] => {
 
 PLAY RECAP *********************************************************************
 default                    : ok=3    changed=0    unreachable=0    failed=0
+{% endraw %}
 ```
 
 While this works great - when we run debug, we evaluate our template strings
 the variable exists.
 
 ```
+{% raw %}
 # example.yml
 ---
 - hosts: all
@@ -106,6 +109,7 @@ ok: [default] => {
 
 PLAY RECAP *********************************************************************
 default                    : ok=3    changed=0    unreachable=0    failed=0
+{% endraw %}
 ```
 
 Now, let's look at looping through this dictionary. If I try to loop through
@@ -113,6 +117,7 @@ it and display a message, we see that the task is run with an item that's been
 evaluated:
 
 ```
+{% raw %}
 # loops.yml
 ---
 - hosts: all
@@ -147,11 +152,13 @@ ok: [default] => (item={'value': {u'a_var': u'/home/vagrant/loop_test/superb/aft
 
 PLAY RECAP *********************************************************************
 default                    : ok=2    changed=0    unreachable=0    failed=0
+{% endraw %}
 ```
 
 And if I strip our task scope variable, the task fails, even though we never
 explicitly access `a_var`:
 ```
+{% raw %}
 # loops.yml
 ---
 - hosts: all
@@ -179,6 +186,7 @@ fatal: [default]: FAILED! => {"msg": "'exists_in_task_scope' is undefined"}
 
 PLAY RECAP *********************************************************************
 default                    : ok=1    changed=0    unreachable=0    failed=1
+{% endraw %}
 ```
 
 The same is true of a `loop` instead of `with_dict`.
@@ -186,6 +194,7 @@ The same is true of a `loop` instead of `with_dict`.
 You can't even loop through the keys of the dictionary:
 
 ```
+{% raw %}
 # loops.yml
 ---
 - hosts: all
@@ -213,12 +222,14 @@ fatal: [default]: FAILED! => {"msg": "'exists_in_task_scope' is undefined"}
 
 PLAY RECAP *********************************************************************
 default                    : ok=1    changed=0    unreachable=0    failed=1
+{% endraw %}
 ```
 
 You can't even get away with putting the keys into a separate variable, like
 this:
 
 ```
+{% raw %}
 ---
 - hosts: all
   vars:
@@ -233,6 +244,7 @@ this:
     - debug:
         msg: Hello
       loop: "{{ dict_keys }}"
+{% endraw %}
 ```
 
 So, in summary, anything you loop over gets evaluated at loop setup time, and
@@ -244,6 +256,7 @@ template that I would only call when I had an item in my scope, and referred to
 that repeatedly. Like so:
 
 ```
+{% raw %}
 # loops.yml
 ---
 - hosts: all
@@ -276,6 +289,7 @@ ok: [default] => (item={'key': u'first', 'value': {u'another_var': u'first'}}) =
 
 PLAY RECAP *********************************************************************
 default                    : ok=2    changed=0    unreachable=0    failed=0
+{% endraw %}
 ```
 
 Hope that helps.
