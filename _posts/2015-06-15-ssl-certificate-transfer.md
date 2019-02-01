@@ -38,26 +38,26 @@ I was in the position where the data I had in a C# client did not match the data
 
 After much prodding, I got to the bottom of it. I used the python [M2Crypto](https://pypi.python.org/pypi/M2Crypto) library and binascii to convert the base64 data. Here's the process you go through to go from PEM file to public key, as it is received on the client side.
 
-```
-        import M2Crypto
-        import binascii
+```python
+import M2Crypto
+import binascii
 
 
-        # Load the certificate in M2Crypto
-        path = '~/certificate.pem'
-        cert = M2Crypto.X509.load_cert(path)
+# Load the certificate in M2Crypto
+path = '~/certificate.pem'
+cert = M2Crypto.X509.load_cert(path)
 
-        # Get the public key from it, in PEM format
-        pem = cert.get_pubkey().get_rsa().as_pem()
+# Get the public key from it, in PEM format
+pem = cert.get_pubkey().get_rsa().as_pem()
 
-        # Pull the headers and footers off
-        key = ''.join(pem.split('\n')[1:-2])
+# Pull the headers and footers off
+key = ''.join(pem.split('\n')[1:-2])
 
-        # Convert from base64 to a string of bytes
-        bytes = bytearray(binascii.a2b_base64(key))
+# Convert from base64 to a string of bytes
+bytes = bytearray(binascii.a2b_base64(key))
 
-        # Finally, cut the first 24 bytes off. This must be some kind of header
-        public_key = bytes[24:]
+# Finally, cut the first 24 bytes off. This must be some kind of header
+public_key = bytes[24:]
 ```
 
 If you can tell me what those 24 bytes do, I'd love to know, and I'd love to know why they don't appear on the other side. They must be part of the PEM formatting. I feel like it must be possible to avoid PEM entirely here, as it seems like a bit of a long way around, but I haven't come across one. If you can help tie up some of these loose ends, please drop me a [github pull request or issue](https://github.com/veryhappythings/veryhappythings.github.com/blob/master/_posts/2015-06-15-ssl-certificate-transfer.md). Thanks!

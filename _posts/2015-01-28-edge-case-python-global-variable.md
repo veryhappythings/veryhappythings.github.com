@@ -12,7 +12,7 @@ If you have a global variable, and you assign to it in a function without
 using the global keyword, your code will fail to compile. This can result in a
 confusing error message. Here's a simplified example:
 
-```
+```python
 TEST_VARIABLE = 'Hello!'
 
 def test_function():
