@@ -1,2 +1,7 @@
+baseurl: https://veryhappythings.github.com
+title: Very Happy Things
+description: >-
+  Programming notes from a tiny grasshopper
+url: "https://veryhappythings.github.com"
 highlighter: rouge
 theme: minima
