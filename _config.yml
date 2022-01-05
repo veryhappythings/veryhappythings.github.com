@@ -3,5 +3,6 @@ title: Very Happy Things
 description: >-
   Programming notes from a tiny grasshopper
 url: "https://veryhappythings.github.com"
+baseurl: ""
 highlighter: rouge
 theme: minima
