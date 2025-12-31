@@ -1,0 +1,19 @@
+baseURL = 'https://veryhappythings.github.com/'
+languageCode = 'en-gb'
+title = 'veryhappythings'
+theme = 'hugo-PaperMod'
+
+[params]
+    socialIcons = [
+        {name = "github", url = "https://www.github.com/veryhappythings"},
+        {name = "linkedin", url = "https://www.linkedin.com/in/macchapman/"},
+    ]
+
+[params.homeInfoParams]
+    Title = "Mac Chapman"
+    Content = "Software engineering leader and platform engineer"
+
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'

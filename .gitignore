@@ -1,8 +1,2 @@
-[._]*.s[a-w][a-z]
-[._]s[a-w][a-z]
-*.un~
-Session.vim
-.netrwhist
-*~
-.sass-cache
-_site
+.hugo_build.lock
+public

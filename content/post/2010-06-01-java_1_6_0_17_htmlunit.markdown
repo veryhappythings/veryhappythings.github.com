@@ -1,0 +1,6 @@
+---
+date: '2010-06-01T00:00:00Z'
+title: Java 1.6.0_17 and HTMLUnit and SSL
+---
+Well, it looks like Java 1.6 update 17 closed some security holes which [makes a lot of stuff involving SSL break](http://forums.sun.com/thread.jspa?threadID=5415963).  I have read about a few fixes, all of which were found by googling my particular exception, but none of them worked for me, so I turned to trusty HTMLUnit to fix my problems.  Obviously, if you're not using HTMLUnit, this won't help you, but if you are, you can turn off the checking of SSL certificates using the handy setUseInsecureSSL method on your [WebClient](http://www.netlikon.de/docs/javadoc-htmlunit/htmlunit-2.1/com/gargoylesoftware/htmlunit/WebClient.html) object.
+
