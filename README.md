@@ -1,0 +1,1 @@
+This is the code behind [veryhappythings.co.uk](https://www.veryhappythings.co.uk), which largely exists to be a very basic frontpage for my email domain but also includes the technical notes I write from time to time.
