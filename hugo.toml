@@ -3,6 +3,10 @@ languageCode = 'en-gb'
 title = 'veryhappythings'
 theme = 'hugo-PaperMod'
 
+[services.googleAnalytics]
+    id = 'G-XXEFC9P2EM'
+
+
 [params]
     socialIcons = [
         {name = "github", url = "https://www.github.com/veryhappythings"},
