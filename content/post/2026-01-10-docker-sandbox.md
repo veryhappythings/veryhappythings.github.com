@@ -3,7 +3,9 @@ date: '2026-01-10T09:27:00Z'
 title: Running Claude Code in Docker Sandbox with AWS Bedrock
 ---
 
-UPDATE: The whole Docker sandbox feature has been changed since I wrote this - check out [sbx](https://docs.docker.com/ai/sandboxes/) for the latest.
+UPDATE: The whole Docker sandbox feature has been changed since I wrote this - check out
+[sbx](https://docs.docker.com/ai/sandboxes/) for the latest. I wrote about using it with Bedrock
+[here](https://www.veryhappythings.co.uk/post/2026-07-11-docker-sbx/).
 
 I was looking into sandboxing Claude Code this week and came across Docker's relatively new
 [sandbox feature](https://docs.docker.com/ai/sandboxes/claude-code/), which makes this very easy.
